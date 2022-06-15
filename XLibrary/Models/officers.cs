@@ -7,6 +7,17 @@ namespace XService.Models
 {
     public partial class officers
     {
+        private int id;
+
+        public officers(string name, int age, string image, int yearsinposition, int id)
+        {
+            this.name = name;
+            this.age = age;
+            this.image = image;
+            this.yearsinposition = yearsinposition;
+            this.id = id;
+        }
+
         public int age { get; set; }
         public string image { get; set; }
         public int of_id { get; set; }

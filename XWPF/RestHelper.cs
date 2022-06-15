@@ -134,7 +134,7 @@ namespace XWPF
         public static async Task<criminal> AddCriminal(criminal criminal)
         {
             StringContent content = new StringContent(JsonSerializer.Serialize(criminal));
-            HttpResponseMessage response = await httpClient.PostAsync($"https://localhost:7276/api/controller/trial", content);
+            HttpResponseMessage response = await httpClient.PostAsync($"https://localhost:7276/api/controller/criminal", content);
 
             if (response.IsSuccessStatusCode == true)
             {
@@ -149,7 +149,7 @@ namespace XWPF
         public static async Task<non_criminal> AddNoncriminal(non_criminal noncriminal)
         {
             StringContent content = new StringContent(JsonSerializer.Serialize(noncriminal));
-            HttpResponseMessage response = await httpClient.PostAsync($"https://localhost:7276/api/controller/trial", content);
+            HttpResponseMessage response = await httpClient.PostAsync($"https://localhost:7276/api/controller/non_criminal", content);
 
             if (response.IsSuccessStatusCode == true)
             {

@@ -15,7 +15,7 @@
         <TextBox x:Name="oftxt" HorizontalAlignment="Left" Margin="400,180,0,0" TextWrapping="Wrap" Text="officer id" VerticalAlignment="Top" Width="400" Height="37"/>
         <TextBox x:Name="tidtxt" HorizontalAlignment="Left" Margin="400,222,0,0" TextWrapping="Wrap" Text="trial id" VerticalAlignment="Top" Width="400" Height="39"/>
         <Button x:Name="editbtn" Content="Edit" HorizontalAlignment="Left" Margin="400,277,0,0" VerticalAlignment="Top" Height="31" Width="400"/>
-        <Button x:Name="addbtn" Content="Add" HorizontalAlignment="Left" Margin="400,313,0,0" VerticalAlignment="Top" Width="400" Height="29"/>
+        <Button x:Name="addbtn" Content="Add" HorizontalAlignment="Left" Margin="400,313,0,0" VerticalAlignment="Top" Width="400" Height="29" Click="addbtn_Click"/>
         <Button x:Name="removebtn" Content="Remove" HorizontalAlignment="Left" Margin="400,347,0,0" VerticalAlignment="Top" Height="30" Width="400" Click="removebtn_Click"/>
         <Button x:Name="homebtn" Content="Home" HorizontalAlignment="Left" Margin="400,382,0,0" VerticalAlignment="Top" Height="31" Width="400"/>
 

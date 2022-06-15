@@ -7,6 +7,14 @@ namespace XService.Models
 {
     public partial class non_criminal
     {
+        public non_criminal(int age, string name, string job, string image)
+        {
+            this.age = age;
+            this.name = name;
+            this.job = job;
+            this.image = image;
+        }
+
         public int age { get; set; }
         public string name { get; set; }
         public string address { get; set; }

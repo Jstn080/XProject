@@ -52,5 +52,16 @@ namespace XWPF
                 return;
             }
         }
+
+        private async void addbtn_Click(object sender, RoutedEventArgs e)
+        {
+            string name = nametxt.Text;
+            int age = Convert.ToInt32(agetxt.Text);
+            string image = imagetxt.Text;
+            int yearsinposition = Convert.ToInt32(ytxt.Text);
+            int t_id = Convert.ToInt32(tidtxt.Text);
+            officers newofficer = new officers(name, age, image, yearsinposition, t_id);
+            await RestHelper.AddOfficer(newofficer);
+        }
     }
 }

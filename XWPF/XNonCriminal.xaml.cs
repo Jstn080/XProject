@@ -32,5 +32,18 @@ namespace XWPF
             on = await RestHelper.GetNonCriminals();
             noncriminaldata.ItemsSource = on;
         }
+
+        private async void addbtn_Click(object sender, RoutedEventArgs e)
+        {
+            int age = Convert.ToInt32(agetxt.Text);
+            string name = nametxt.Text;
+            string job = jobtxt.Text;
+            string image = imagetxt.Text;
+            string address = addresstxt.Text;
+
+            non_criminal newnoncriminal = new non_criminal(age, name, job, image);
+            await RestHelper.AddNoncriminal(newnoncriminal);
+            
+        }
     }
 }
