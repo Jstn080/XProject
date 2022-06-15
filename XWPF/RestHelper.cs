@@ -116,5 +116,51 @@ namespace XWPF
                 return null;
             }
         }
+        public static async Task<officers> AddOfficer(officers officers)
+        {
+            StringContent content = new StringContent(JsonSerializer.Serialize(officers));
+            HttpResponseMessage response = await httpClient.PostAsync($"https://localhost:7276/api/controller/trial", content);
+
+            if (response.IsSuccessStatusCode == true)
+            {
+                officers newofficer = JsonSerializer.Deserialize<officers>(await response.Content.ReadAsStringAsync(), options);
+                return newofficer;
+            }
+            else
+            {
+                return null;
+            }
+        }
+        public static async Task<criminal> AddCriminal(criminal criminal)
+        {
+            StringContent content = new StringContent(JsonSerializer.Serialize(criminal));
+            HttpResponseMessage response = await httpClient.PostAsync($"https://localhost:7276/api/controller/trial", content);
+
+            if (response.IsSuccessStatusCode == true)
+            {
+                criminal newcriminal = JsonSerializer.Deserialize<criminal>(await response.Content.ReadAsStringAsync(), options);
+                return newcriminal;
+            }
+            else
+            {
+                return null;
+            }
+        }
+        public static async Task<non_criminal> AddNoncriminal(non_criminal noncriminal)
+        {
+            StringContent content = new StringContent(JsonSerializer.Serialize(noncriminal));
+            HttpResponseMessage response = await httpClient.PostAsync($"https://localhost:7276/api/controller/trial", content);
+
+            if (response.IsSuccessStatusCode == true)
+            {
+                non_criminal newnoncriminal = JsonSerializer.Deserialize<non_criminal>(await response.Content.ReadAsStringAsync(), options);
+                return newnoncriminal;
+            }
+            else
+            {
+                return null;
+            }
+        }
+
     }
 }
