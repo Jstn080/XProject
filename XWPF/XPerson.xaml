@@ -1,0 +1,14 @@
+﻿<Window x:Class="XWPF.XPerson"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:XWPF"
+        mc:Ignorable="d"
+        Title="XPerson" Height="450" Width="800">
+    <Grid>
+        <Button x:Name="cbtn" Content="Criminals" HorizontalAlignment="Center" Margin="0,87,0,0" VerticalAlignment="Top" Height="95" Width="800" Click="cbtn_Click"/>
+        <Button x:Name="nbtn" Content="Non Criminals" HorizontalAlignment="Center" Margin="0,251,0,0" VerticalAlignment="Top" Height="93" Width="800" Click="nbtn_Click"/>
+
+    </Grid>
+</Window>
