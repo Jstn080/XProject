@@ -52,5 +52,12 @@ namespace XWPF
                 return;
             }
         }
+
+        private void addbtn_Click(object sender, RoutedEventArgs e)
+        {
+            string place = placetxt.Text;
+            DateTime dateTime = Convert.ToDateTime(datetxt.Text);
+            int of_id = Convert.ToInt32(officertxt.Text);
+        }
     }
 }

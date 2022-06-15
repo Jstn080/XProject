@@ -13,7 +13,7 @@
         <TextBox x:Name="officertxt" HorizontalAlignment="Center" Margin="0,260,0,0" TextWrapping="Wrap" Text="officer id" VerticalAlignment="Top" Width="800" Height="34"/>
         <TextBox x:Name="criminaltxt" HorizontalAlignment="Center" Margin="0,299,0,0" TextWrapping="Wrap" Text="criminal id" VerticalAlignment="Top" Width="800" Height="34"/>
         <Button x:Name="editbtn" Content="Edit" HorizontalAlignment="Left" Margin="0,386,0,0" VerticalAlignment="Top" Height="38" Width="125"/>
-        <Button x:Name="addbtn" Content="Add" HorizontalAlignment="Left" Margin="130,386,0,0" VerticalAlignment="Top" Height="38" Width="131"/>
+        <Button x:Name="addbtn" Content="Add" HorizontalAlignment="Left" Margin="130,386,0,0" VerticalAlignment="Top" Height="38" Width="131" Click="addbtn_Click"/>
         <Button x:Name="removebtn" Content="Remove" HorizontalAlignment="Left" Margin="266,386,0,0" VerticalAlignment="Top" Height="38" Width="122" Click="removebtn_Click"/>
 
     </Grid>
